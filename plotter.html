@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2D Data Plotter in javaScript using Plotly.js and JQuery</title>
+	<script src="assets/js/plotly-latest.min.js"></script>
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+<p align="center"><strong>This is a plot using Plotly.js and JQuery</strong></p>
+Enter X Data as x1,x2,..... :<input id="x_data_input" type="text">
+<br><br>
+Enter Y Data as y1,y2,..... :<input id="y_data_input" type="text">
+<br><br>
+<button id="plot">Plot</button>
+<div id="plotter"></div>
+
+<script type="text/javascript">
+
+	$('#plot').click(function(){
+		var x_str=$('#x_data_input').val(),
+			y_str=$('#y_data_input').val(),t1,t2,i,x_dat=[],y_dat=[];
+
+		t1=x_str.split(","); 	
+		t2=y_str.split(",");
+
+		for(i=0;i<t1.length;i++){
+			x_dat[i]=parseInt(t1[i]);
+			y_dat[i]=parseInt(t2[i]);
+		}
+
+		var plotting_data=[{
+			x:x_dat,
+			y:y_dat,
+			mode: 'lines+markers',
+  			type: 'scatter'
+		}];
+
+		var layout = {
+		  title:'Plot of the Data'
+		};
+
+		Plotly.newPlot('plotter',plotting_data,layout);	
+	})		
+	
+</script>
+
+</body>
+</html>
+
+
