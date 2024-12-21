@@ -1,75 +1,258 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Shreyak Chakraborty's Website</title>
-        <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link href="style.css" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shreyak Chakraborty - Personal Website</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+                background: #f4f4f9;
+                color: #333;
+            }
+
+            header {
+                background: #333;
+                color: #fff;
+                padding: 1rem 0;
+                text-align: center;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 2.5rem;
+            }
+
+            header p {
+                margin: 0.5rem 0;
+                font-size: 1.2rem;
+            }
+
+            nav {
+                text-align: center;
+                margin: 1rem 0;
+            }
+
+            nav a {
+                margin: 0 1rem;
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+            }
+
+            section {
+                max-width: 900px;
+                margin: 2rem auto;
+                padding: 1rem;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+                border-bottom: 2px solid #333;
+                display: inline-block;
+            }
+
+            .project-list {
+                list-style: none;
+                padding: 0;
+            }
+
+            .project-list li {
+                margin: 1rem 0;
+            }
+
+            .project-list a {
+                text-decoration: none;
+                color: #0066cc;
+            }
+
+            footer {
+                text-align: center;
+                margin: 2rem 0;
+                font-size: 0.9rem;
+            }
+
+            footer a {
+                color: #0066cc;
+                text-decoration: none;
+            }
+        </style>
     </head>
     <body>
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#" style="background-color: #c59898;">Shreyak Chakraborty's Website</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-           
+        <header>
+            <h1>Shreyak Chakraborty</h1>
+            <p>Tech Lead | Independent Researcher</p>
+        </header>
+
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#interests">Interests</a>
+            <a href="#comics">Comics</a>
         </nav>
-        <div class="content">
-            <p align="center" style="font-size: 24px">
-            Hello and welcome to my website! </p>
-            <hr>
-            <br>
-            <br>
-            <p align="center" style="font-size: 20px"> 
-                My name is Shreyak Chakraborty and I am a Full-stack web developer with 4 years of experience.
-                <br>
-                I specialize in creating web applications in PHP,JavaScript (React,VueJS), NodeJS and Python (Django/Flask).
-                <br><br>
-                <b>Github: </b> <a href="https://github.com/kernelshreyak">kernelshreyak</a><br><br>
-                This is a portfolio website to showcase my personal and professional projects in a single location
+
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                I am Shreyak Chakraborty, a software engineer with over 7 years
+                of experience in developing and leading teams in software
+                engineering. My expertise spans various fields, and I am deeply
+                passionate about technology and innovation.
             </p>
+        </section>
 
-            <br> <br>
-            <p>You can find my resume <a href="/Shreyak_CV_fullstack.pdf">here</a></p>
-            <br> <br>
+        <section id="projects">
+            <h2 class="section-title">Open Source Projects</h2>
+            <ul class="project-list">
+                <li>
+                    <a
+                        href="https://github.com/kernelshreyak/videoeditor_online"
+                        target="_blank"
+                        >Online Video Editor</a
+                    >: A web-based video editor application.
+                </li>
+                <li>
+                    <a
+                        href="https://github.com/kernelshreyak/openclimber"
+                        target="_blank"
+                        >Open Climber</a
+                    >: A climbing simulation built using Godot Engine.
+                </li>
+                <li>
+                    <a
+                        href="https://github.com/kernelshreyak/ai-rpg-text"
+                        target="_blank"
+                        >AI RPG Text Generator</a
+                    >: A text-based RPG experience powered by AI.
+                </li>
+            </ul>
+        </section>
 
-            <h3>JavaScript Simulations</h3>
-             <div class="row">
+        <section id="interests">
+            <h2 class="section-title">Areas of Interest</h2>
+            <p><strong>Computer Science:</strong></p>
+            <ul>
+                <li>
+                    <strong>AI and Machine Learning:</strong> Exploring
+                    cutting-edge AI technologies, developing predictive models,
+                    and understanding neural networks to solve real-world
+                    problems.
+                </li>
+                <li>
+                    <strong>Blockchain Development:</strong> Creating
+                    decentralized applications, understanding smart contracts,
+                    and innovating in Web3 technologies.
+                </li>
+                <li>
+                    <strong>Game Development:</strong> Building immersive games
+                    using the Godot engine, focusing on gameplay mechanics,
+                    physics, and storytelling.
+                </li>
+                <li>
+                    <strong>Computational Physics:</strong> Engaging in
+                    simulations like Computational Fluid Dynamics (CFD) and
+                    physics engines to model and solve complex physical systems.
+                </li>
+            </ul>
 
-                <div class="col-md-4">
-                    <b><a href="simulations/bouncing_particles.html">Bouncing Particles</a></b>
-                    <p>A simple simulation of ball-like particles in a container. Particles can be interactively added by the user.</p>
-                </div>
-                <div class="col-md-4">
-                    <b><a href="simulations/particle_test.html">Particles in a box</a></b>
-                    <p>Another basic simulation of particles moving in a container. The code can be tweaked to change the properties of the particles.</p>
-                </div>
-                <div class="col-md-4">
-                    <b><a href="simulations/fractal_tree.html">Interactive Fractal Tree</a></b>
-                    <p>A Fractal Tree drawing web application that supports variable parameters</p>
-                </div>
-            </div>    
+            <p><strong>Mathematics:</strong></p>
+            <ul>
+                <li>
+                    <strong>Linear Algebra:</strong> Applying matrix
+                    transformations, eigenvalues, and eigenvectors in AI,
+                    computer graphics, and physics.
+                </li>
+                <li>
+                    <strong>Abstract Algebra:</strong> Delving into group theory
+                    and other algebraic structures for cryptographic algorithms
+                    and theoretical research.
+                </li>
+                <li>
+                    <strong>Statistics:</strong> Using statistical methods for
+                    data analysis, hypothesis testing, and decision-making
+                    processes.
+                </li>
+                <li>
+                    <strong>Mathematical Modeling and Simulation:</strong>
+                    Developing and analyzing models to understand real-world
+                    phenomena across disciplines.
+                </li>
+            </ul>
 
-           
-        </div>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+            <p><strong>Other Interests:</strong></p>
+            <ul>
+                <li>
+                    <strong>Music Production:</strong> Creating and mixing
+                    tracks using DAWs like Reaper and FL Studio, with a focus on
+                    both technical precision and artistic expression.
+                </li>
+                <li>
+                    <strong>Piano Playing:</strong> Exploring classical and
+                    contemporary pieces, enhancing my creative and cognitive
+                    abilities.
+                </li>
+                <li>
+                    <strong>Reading:</strong> Enjoying a mix of comics, manga,
+                    fiction, and non-fiction to expand both creativity and
+                    knowledge.
+                </li>
+            </ul>
+        </section>
+
+        <section id="comics">
+            <h2 class="section-title">Comics Collection</h2>
+            <p>
+                Explore my
+                <a
+                    href="https://leagueofcomicgeeks.com/profile/shreyak/collection"
+                    target="_blank"
+                    >comics collection</a
+                >
+                on League of Comic Geeks.
+            </p>
+            <p>
+                <strong>Favourite Manga:</strong> Uzumaki (Junji Ito), Solo
+                Leveling, One Piece, Berserk, Parasyte.
+            </p>
+        </section>
+
+        <section id="current">
+            <h2 class="section-title">Currently Working On</h2>
+            <p>I am currently working on the following projects:</p>
+            <ul>
+                <li>
+                    <strong>Learning Deep Learning in Depth:</strong> Enhancing
+                    my understanding of deep learning to guide others in
+                    training complex computer vision models for medical use
+                    cases.
+                </li>
+                <li>
+                    <strong>AI-Enabled Blockchain:</strong> Creating a
+                    blockchain that integrates AI models accessible via a
+                    decentralized architecture, advancing the synergy between AI
+                    and blockchain technologies.
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>
+                &copy; 2024 Shreyak Chakraborty |
+                <a href="https://github.com/kernelshreyak" target="_blank"
+                    >GitHub</a
+                >
+            </p>
+        </footer>
     </body>
 </html>
